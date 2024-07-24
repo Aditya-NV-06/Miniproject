@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <!--Header-->
+    <header class="header"> 
+        <h2>Portfolio</h2>
+        <nav>
+            <ul class="nav">
+                <li class="item item1"><span  class="hover-txt"><a href="#" class="link">Home</a></span></li>
+                <li class="item item2"><span class="hover-txt"><a href="#project1" class="link">Projects</a></span></li>
+                <li class="item item3"><span class="hover-txt">About Me</span></li>
+                <li class="item item4"><span class="hover-txt">Contact</span></li>
+            </ul>
+        </nav>
+        <div>
+        <button type="button" id="dark" class="button">Dark</button>
+        <button type="button"  id="resume" class="button">Resume</button>
+       
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--container1-->
+        <div class="container">
+            <div class="parent">
+            <div class="child-container1">  
+                 <h2>I am 
+                    <span class="am">Aditya N V</span>
+                 </h2>
+                 <p>A passionate web dev working and Exploring cutting edge technologies</p>
+               
+             <button class="btn-social" id="git"><a href="https://github.com/ironcrush2006">Github</a></button>
+              <button class="btn-social" id="tweet"><a href="https://x.com/Adityaironcrush">X</a></button>
+              <button class="btn-social" id="link"><a href="https://www.linkedin.com/in/aditya-nv/">LinkedIn</a></button>
+       
+            </div>
+            </div>
+            <div class="child-container2">
+                <img src="./flexy-young-man-programming-on-laptop.png" alt="image">
+        </div>
+        </div>
+        <!--Projects-->
+        <div class="project" id="project1">
+           <h3 class="topics">Projects</h3>
+            <div class="pro1">
+                <div class="set1">
+                    <img src="https://www.gitkraken.com/wp-content/uploads/2022/02/CLI-stands-forHero.png" alt="photo0">
+                    <h4>Rust Cli</h4>
+                    <p>Reliable,cross-platform</p>
+                    <button type="button" class="btn-social"><a href="https://github.com/ironcrush2006/project_cli">Code</a></button>
+                </div> 
+                <div class="set1">
+                    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/07/mejores-bots-discord.jpg" alt="photo1">
+                    <h4>Discord Bot</h4>
+                    <p>Powerful,customizable</p>
+                    <button type="button" class="btn-social"><a href="https://github.com/ironcrush2006/Bot-discord">Code</a></button>
+                </div>
+                <div class="set1">
+                    <img src="https://th.bing.com/th/id/OIP.KmkFjBLupS8AxAW4DoRu3gHaE8?rs=1&pid=ImgDetMain" alt="photo3">
+                    <h4>Mini web projects</h4>
+                    <p>Portfolio-building</p>
+                    <button type="button" class="btn-social"><a href="#">Code</a></button>
+                </div>
+            </div>
+        </div>
+        <!--Skills-->
+       <div class="skills" id="wanted">
+          
+            <h3 class="topics">Skills</h3>
+               <div class="slist">
+                <div>
+                <span>HTML</span>
+                <progress value="80" max="100"></progress>
+                <span>CSS</span>
+                <progress value="80" max="100"></progress>
+                <span>JAVASCRIPT</span>
+                <progress value="80" max="100"></progress>
+                <span>C</span>
+                <progress value="80" max="100"></progress>
+                <span>C++</span>
+                <progress value="80" max="100"></progress>
+                </div>
+                <div>
+                <span>RUST</span>
+                <progress value="80" max="100"></progress>
+                <span>MARKDOWN</span>
+                <progress value="80" max="100"></progress>
+                <span>GIT</span>
+                <progress value="80" max="100"></progress>
+                <span>WSL</span>
+                <progress value="80" max="100"></progress>
+                <span>Tailwind</span>
+                <progress value="80" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    
+    <div>
+        <div class="about">
+            <h2>About Me</h2>
+            <div class="content">
+                <ul>
+                   <li>Dedicated and enthusiastic programmer.</li>
+                   <li>Passion for coding and continuous learning.</li>
+                   <li>Strong analytical mindset and persistent drive for improvement</li>
+                   <li>Solid foundation for future endeavors in software development.</li>
+                   <li>Engaged in diverse projects, such as creating a stopwatch and fetching data from APIs.</li>
+                   <li>Keen interest in enhancing skills across various programming languages, including JavaScript, Rust, and CSS.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-us">
+          
+            <form> 
+                <h3>Contact ME</h3>
+            
+               <input type="text" placeholder="Name" id="formName">
+                <input type="email" placeholder="Email" id="formemail">
+                <h4 id="show"></h4>
+                <button type="button" class="sub" id="valid">SUBMIT</button>
+                
+            </form>
+           
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>

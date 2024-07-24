@@ -1,0 +1,40 @@
+body{ 
+    background: linear-gradient(rgb(165, 165, 184) 1%,rgb(189, 214, 189),rgb(173, 159, 173));
+    margin:40px 100px;
+    
+}
+
+h1{ 
+    color:whitesmoke;
+    text-align: center;
+}
+img{ 
+    overflow: hidden;
+    width:200px;
+    height:150px;
+   padding:40px 30px;
+}
+
+
+li{ 
+    flex-direction: column;
+    display:flex;  
+    justify-content:center;
+    padding:10px 20px;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main{ 
+    display:flex;
+    background-color: aliceblue;
+    gap:20px;
+    padding:20px;
+    justify-content: space-evenly;
+}
+
+select {
+    width: 70px;
+   
+    margin: 10px;
+}

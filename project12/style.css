@@ -1,0 +1,84 @@
+body{ 
+    height:100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{ 
+    width:350px;
+    padding: 20px 10px ;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin:10px;
+}
+
+input{ 
+    flex:5;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+
+.input{ 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin:10px;
+    padding:10px;
+
+}
+#addtask{ 
+    flex: 1;
+    font-size: 1rem;
+    padding:5px;
+     margin-left: 30px;
+    transition: .3s;
+    background-color: #fff;
+    color:green;
+    border: green solid 2px;
+    border-radius: 10px;
+}
+
+#addtask:hover{ 
+    background-color: green;
+    color:#fff;
+}
+
+.addtask{ 
+    flex: 1;
+    font-size: 1rem;
+    padding:5px;
+     margin-left: 30px;
+    transition: .3s;
+    background-color: #fff;
+    color:green;
+    border: green solid 2px;
+    border-radius: 10px;
+}
+
+.addtask:hover{ 
+    background-color: green;
+    color:#fff;
+}
+
+.deltask{ 
+    flex: 1;
+    font-size: 1rem;
+    padding:5px;
+     margin-left: 30px;
+    transition: .3s;
+    background-color: #fff;
+    color:red;
+    border: red solid 2px;
+    border-radius: 10px;
+}
+
+.deltask:hover{ 
+    background-color: red;
+    color:#fff;
+}

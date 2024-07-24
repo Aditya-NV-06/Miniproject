@@ -1,0 +1,56 @@
+
+body{ 
+    height:100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{ 
+    background-color: bisque;
+    width: 450px;
+    border: 2px solid black;
+    padding: 20px 10px ;
+    height: 400px;
+}
+
+.gridcontainer{ 
+    display: grid;
+    grid-template-columns: 300px;
+    border: 2px solid black;
+    height: 90%;
+    justify-content:center;
+}
+
+.watch{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.button{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+    gap:10%
+}
+
+.buttons{
+    padding: 10px;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.buttons:hover{
+    background-color: white;
+}
+
+
+
+
