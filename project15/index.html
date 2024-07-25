@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Website with Left Sidebar</title>
+  
+</head>
+<body>
+    <style>
+        /* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set up the grid layout */
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar width and main content */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 40px;
+  }
+  
+  header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+    </style>
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <header>
+        <h1>Welcome to my Website</h1>
+      </header>
+      
+      <section class="hero">
+        <h2>Discover the Power of Grid Layout</h2>
+        <p>Our website showcases the versatility and flexibility of grid layout.</p>
+      </section>
+      
+      <section class="features">
+        <div class="feature-item">
+          <h3>Responsive Design</h3>
+          <p>Our website adapts seamlessly to different screen sizes.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Easy Customization</h3>
+          <p>Customize the layout to suit your needs with minimal effort.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Modern Aesthetics</h3>
+          <p>Enjoy a clean and visually appealing design.</p>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2024 Grid Layout Website. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script >
+    // script.js
+const menuToggle = document.querySelector('.menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('show');
+  });
+}
+  </script>
+</body>
+</html>

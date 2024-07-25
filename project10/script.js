@@ -28,9 +28,6 @@ valid.addEventListener('click',()=>{
 })
 
 //name 
-
-
-
 document.addEventListener("DOMContentLoaded", () =>{
     const nameElement = document.getElementsByClassName("am");
     nameElement.style.position = "absolute";

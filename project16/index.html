@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Ebay</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <header>
+                <h1>E-commerce Store</h1>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Home Section -->
+            <section id="home" class="section">
+                <div class="hero">
+                    <h2>Featured Products</h2>
+                    <div class="hero-products">
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 1">
+              <h3> Smart LED Desk Lamp</h3>
+                            <p>Elevate your practice with our Eco-Friendly Yoga Mat, crafted from sustainable materials that provide excellent grip and cushioning. Measuring 72" x 24", this mat is perfect for yogis of all levels. Its non-toxic, biodegradable design ensures you can flow through your poses while caring for the planet. Lightweight and portable, it comes with a convenient carrying strap for on-the-go sessions.</p>
+                            <button type='button' id="btn" class="btn-home" >Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 2">
+                            <h3>Bluetooth Noise-Canceling Headphones</h3>
+                            <p>Illuminate your workspace with our Smart LED Desk Lamp, featuring adjustable brightness and color temperature settings. With a sleek, modern design and touch-sensitive controls, this lamp not only enhances your productivity but also adds a stylish touch to any desk. The built-in USB port allows for easy charging of your devices, making it the perfect companion for late-night work or study sessions.</p>
+                            <button  type='button'  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 3">
+                            <h3> Stylish Crossbody Bag</h3>
+                            <p>Stay hydrated in style with our Premium Stainless Steel Water Bottle. Designed with double-wall vacuum insulation, it keeps your drinks cold for 24 hours or hot for 12 hours. The leak-proof lid and wide mouth make it easy to fill and clean, while the sleek, matte finish adds a touch of elegance. Perfect for gym-goers, travelers, and everyday use, this bottle is your go-to hydration solution.</p>
+                            <button  type='button'  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <section class="products">
+                    <h2>All Products</h2>
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 4">
+                            <h3>Product 4</h3>
+                            <p>Discover the soothing world of tea with our Organic Herbal Tea Sampler. This curated collection features six delightful blends, each crafted from the finest organic herbs and botanicals. From calming chamomile to invigorating peppermint, each tea offers unique health benefits and flavors. Perfect for gifting or treating yourself, this sampler invites you to relax and unwind with every sip.</p>
+                            <button  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 5">
+                            <h3>Product 5</h3>
+                            <p>Immerse yourself in superior sound quality with our Bluetooth Noise-Canceling Headphones. Designed for audiophiles and casual listeners alike, these headphones feature advanced noise-canceling technology that blocks out distractions, allowing you to enjoy your music or podcasts in peace. With a comfortable over-ear design and up to 30 hours of battery life, they are perfect for long commutes or relaxing at home.</p>
+                            <button  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 6">
+                            <h3>Product 6</h3>
+                            <p>Discover the soothing world of tea with our Organic Herbal Tea Sampler. This curated collection features six delightful blends, each crafted from the finest organic herbs and botanicals. From calming chamomile to invigorating peppermint, each tea offers unique health benefits and flavors. Perfect for gifting or treating yourself, this sampler invites you to relax and unwind with every sip.</p>
+                            <button  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="https://picsum.photos/200" alt="Product 7">
+                            <h3>Product 7</h3>
+                            <p>Step out in style with our Stylish Crossbody Bag, designed for the modern woman on the go. Made from high-quality faux leather, this bag features a chic, minimalist design with adjustable straps for customizable comfort. The spacious interior includes multiple pockets to keep your essentials organized, while the trendy color options ensure you’ll find the perfect match for any outfit. Ideal for day trips or nights out, this bag is both functional and fashionable.</p>
+                            <button  id="btn" class="btn-home">Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section" style="display: none;">
+                <h2>About Us</h2>
+                <p>We are a team of passionate e-commerce enthusiasts dedicated to providing the best shopping experience for our customers. Our store was founded in 2024 with the goal of making online shopping more accessible and enjoyable.</p>
+                <h2>Our Mission</h2>
+                <p>Our mission is to offer a wide range of high-quality products at competitive prices, while ensuring exceptional customer service. We strive to build long-lasting relationships with our customers by consistently meeting their needs and exceeding their expectations.</p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section" style="display: none;">
+                <div>
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js">
+   
+    </script>
+</body>
+</html>
