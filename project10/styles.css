@@ -30,7 +30,7 @@ a:visited {
 .active{ 
     background-color: #4d867c;
 }
-
+ 
 .am {
     font-size: 2em;
     position: relative;
@@ -39,7 +39,7 @@ a:visited {
 
 @keyframes move {
     0% { left: 0; }
-    50% { left: 3px; }
+    50% { left: 10px; }
     100% { left: 0; }
 }
 
