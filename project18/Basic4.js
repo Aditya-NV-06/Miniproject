@@ -34,7 +34,7 @@ console.log('for of finished')
 
 //for in loop
 
-let a2={name:"aditya",age:12}
+let a2={name:"aditya",age:12 }
 
 for (let value in a2){ 
     console.log(a2[value]);
