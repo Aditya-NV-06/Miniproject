@@ -52,3 +52,6 @@ const add=(a,b)=>{
     return a+b;
 }
 add(23,45);
+
+
+//scope -global,local,block.
