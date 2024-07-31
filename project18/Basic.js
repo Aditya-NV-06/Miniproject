@@ -8,7 +8,6 @@ let cc=2;
 let ee=1;
 let ff=3;
 
-
 if(rr>cc){ 
   ee++;
 }
