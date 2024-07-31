@@ -119,3 +119,14 @@ console.log(arr.sort((a,b)=>a-b))
 //flat
 const nest=[[1,2],[2,3]];
 console.log(nest.flat())
+
+
+//objects
+const student={ 
+    name:"javascript",
+     show:()=> { 
+        console.log(`${this.name}`)
+     }
+}
+
+console.log(student.show())
