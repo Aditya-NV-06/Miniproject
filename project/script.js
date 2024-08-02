@@ -31,7 +31,7 @@ button.addEventListener('click', () => {
     if (inputname.value && emailname.value) {
         let success = document.createElement('div');
         success.classList.add('message'); 
-        success.innerText = 'Data is Saved';
+        success.innerText = 'Login sucessfull';
         start.appendChild(success);
     }
   
