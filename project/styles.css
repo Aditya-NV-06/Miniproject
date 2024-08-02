@@ -6,6 +6,7 @@ h1{
 .start {
     width:200px;
   padding: 30px;
+  margin: 10rem;
     border:2px solid black;
     left:100px;
 }
