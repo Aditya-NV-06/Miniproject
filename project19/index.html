@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #parent{ 
+        background:linear-gradient(white,lightblue,rgb(206, 206, 120));
+        width:300px;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+        margin:10rem;
+    }
+    #img{
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="child">
+            <img src="" id="img" alt="">
+        </div>
+       
+        <button type="button">Click Me</button>
+    </div>
+    <script>
+    
+
+const arr = ['Aditya N V', 'II', 'BE/CSE'];
+const img = [
+    { src: 'https://picsum.photos/200' },
+    { src: 'https://picsum.photos/200/300' },
+    { src: 'https://picsum.photos/200' },
+    { src: 'https://picsum.photos/200/300' },
+    { src: 'https://picsum.photos/200' },
+    { src: 'https://picsum.photos/200/300' },
+    { src: 'https://picsum.photos/200' },
+    { src: 'https://picsum.photos/200/300' },
+];
+
+const ig = document.querySelector('#img');
+const head=document.createElement('h1');
+head.textContent='Image Generator';
+const name = document.createElement('p');
+name.textContent = arr[0];
+const year = document.createElement('p');
+year.textContent = arr[1];
+const dep = document.createElement('p');
+dep.textContent = arr[2];
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+   
+    let rand = Math.floor(Math.random() * img.length);
+    console.log(rand);
+
+    container.appendChild(ig);
+    ig.setAttribute('src', img[rand].src);
+});
+
+const container = document.querySelector('#child');
+container.appendChild(head);
+container.appendChild(name);
+container.appendChild(year);
+container.appendChild(dep);
+
+        
+    </script>  
+</body>
+</html>
