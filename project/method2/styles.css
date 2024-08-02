@@ -1,0 +1,69 @@
+body{ 
+     background: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+
+h1{ 
+    text-align:center;
+    color:black;
+}
+
+.start {
+    width:200px;
+  padding: 30px;
+  margin-top:80px;
+    border:2px solid black;
+    margin-left:410px;
+}
+.message{ 
+    color:red;
+}
+.Login{ 
+
+    background-color: aquamarine;
+     border:20px solid black;
+}
+
+.none{
+    padding-top:50px;  
+}
+.container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.name-container  .name1{
+    font-weight: bold;
+    border-radius:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:0px;
+}
+
+.email-container .mail{
+    font-weight: bold;
+    border-radius:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:0px;
+}
+
+#button{ 
+    font-size: medium;
+    margin:30px 40px;
+    border:10px 20px;
+    border-radius: 10%;;
+    padding:10px 20px;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: blueviolet;
+    color:#fff;
+}
+
+
