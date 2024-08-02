@@ -34,7 +34,7 @@ button.addEventListener('click', () => {
         success.innerText = 'Data is Saved';
         start.appendChild(success);
     }
-    if(inputname.value==emailname.value){
-      alert("Enter the valid name and email");
-    }
+  
 });
+
+
