@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<htm lang="en">
+    <head>
+        <title>Interactive Art Gallery</title>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            .artwork { display: none; }
+            .active { display: block; }
+            .highlight { background-color: #f0f0f0; cursor: pointer; }
+            .img{ 
+                  width: 300px;
+                  height: 300px;
+                  margin-left: 50px;
+            }
+            .dic{
+                width: 400px;
+                height: auto;
+                background-color: antiquewhite;
+                padding: 30px;
+                padding-top: 10px;
+                margin-left: 30%;
+            }
+            .dic h1{
+                text-align: center;
+            }
+        button{
+            border: none;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="dic">
+    <h1>Interactive Art Gallery</h1>
+   
+    <div id="galleryContainer"></div>
+    <div id="navigation">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const galleryContainer = document.getElementById("galleryContainer");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+
+    let currentArtwork = 0;
+    let artworks = [
+        { name: "Starry Night", artist: "Vincent van Gogh", year: 1889, description: "A famous painting by Vincent van Gogh.", image: "https://images.pexels.com/photos/1175136/pexels-photo-1175136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
+        { name: "Gandhi", artist: "Leonardo da Vinci", year: 1873, description: "A portrait of Gandhi, by Leonardo da Vinci.", image: "https://iasgyan.in/ig-uploads/images/GANDHI%E2%80%99S_SATYAGRAHA_IN_SOUTH_AFRICA.jpg" },
+        { name: "The Persistence of Memory", artist: "Salvador Dalí", year: 1931, description: "A surreal painting by Salvador Dalí.", image: "https://uploads6.wikiart.org/images/salvador-dali/the-persistence-of-memory-1931.jpg" },
+     
+    ];
+        function renderArtwork(index) {
+            const artwork = artworks[index];
+            galleryContainer.innerHTML = `
+                <div class="artwork active">
+                    <img src="${artwork.image}" class="img" alt="${artwork.name}">
+                    <h2>${artwork.name}</h2>
+                    <p>Artist: ${artwork.artist}</p>
+                    <p>Year: ${artwork.year}</p>
+                    <p>${artwork.description}</p>
+                </div>
+            `;
+        }
+    
+    
+    
+        prevButton.addEventListener("click", function() {
+            if (currentArtwork > 0) {
+                currentArtwork--;
+                renderArtwork(currentArtwork);
+            }
+        });
+    
+    nextButton.addEventListener("click", function() {
+        if (currentArtwork < artworks.length - 1) {
+            currentArtwork++;
+            renderArtwork(currentArtwork);
+        }
+    });
+
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+            nextButton.click();
+        } else if (event.key === "ArrowLeft") {
+            prevButton.click();
+        }
+    });
+
+    renderArtwork(currentArtwork);
+});
+</script>
+</html>\
