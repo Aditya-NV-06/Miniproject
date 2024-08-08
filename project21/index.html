@@ -7,41 +7,47 @@
 </head>
 <body>
     <div id="content">
-
+        <!-- Content will be dynamically inserted here -->
     </div>
 </body>
 
-
 <script>
-    async function fetchData(url){
-        try{
+    // Define an asynchronous function to fetch data from a given URL
+    async function fetchData(url) {
+        try {
+            // Await the response from the fetch call
             const response = await fetch(url);
-            if(!response.ok){
-                throw new Error(`HTTP Error ! status : ${response.statusText}`);
+            // Check if the response is not OK (status code not in the range 200-299)
+            if (!response.ok) {
+                // Throw an error with the status text
+                throw new Error(`HTTP Error! status: ${response.statusText}`);
             }
+            // Await the JSON data from the response
             const data = await response.json();
             return data;
+        } catch (error) {
+            // Catch and rethrow any errors that occur during the fetch or JSON parsing
+            throw error;
         }
-        catch (error){
-           throw error;
-
-        };
     }
 
+    // Define the API URL
     const apiURL = 'https://jsonplaceholder.typicode.com/posts/1';
-    
-    async function handleData(){
-        try{
-            const data = await fetchData(apiURl);
-            console.log("Data:",data);
-        }
-        catch(err){ 
 
+    // Define an asynchronous function to handle the fetched data
+    async function handleData() {
+        try {
+            // Correct the variable name from apiURl to apiURL
+            const data = await fetchData(apiURL);
+            // Log the fetched data to the console (or handle it as needed)
+            console.log(data);
+        } catch (error) {
+            // Log any errors that occur during the data fetching process
+            console.error('Error fetching data:', error);
         }
-  
     }
-    handleData();
-    
 
+    // Call the handleData function to initiate the data fetching process
+    handleData();
 </script>
 </html>
