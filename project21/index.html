@@ -40,9 +40,9 @@
             // Correct the variable name from apiURl to apiURL
             const data = await fetchData(apiURL);
             // Log the fetched data to the console (or handle it as needed)
-            console.log(data);
+            console.log(data.body);
             //to show on the broswer
-            document.getElementById('content').textContent=JSON.stringify(data)
+            document.getElementById('content').textContent=JSON.stringify(data.body)
         } catch (error) {
             // Log any errors that occur during the data fetching process
             console.error('Error fetching data:', error);
