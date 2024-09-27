@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps: 
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Print something
         uses: echo "Hello world and welcome to github action"
 
