@@ -7,7 +7,7 @@ on:
   push:
 #this is the content which happens
    branches:
-     -main
+     - master
 #set of steps that execute commands or scripts 
 jobs: 
 #container to be ran the event is triggers 
