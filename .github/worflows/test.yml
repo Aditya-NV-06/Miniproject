@@ -1,0 +1,22 @@
+#this is the name of the file 
+name: Test the github actions
+
+#this the event which triggers when it is done 
+on:
+#this is the event which is triggers 
+  push:
+#this is the content which happens
+   branches:
+     -main
+#set of steps that execute commands or scripts 
+jobs: 
+#container to be ran the event is triggers 
+  bulid:
+    #container os
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: Print something
+        uses: echo "Hello world and welcome to github action"
+
+        
